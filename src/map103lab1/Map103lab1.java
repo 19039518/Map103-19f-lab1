@@ -5,17 +5,23 @@
  */
 package map103lab1;
 
+import java.util.Scanner;
+
 /**
  *
  * @author 19039518
  */
 public class Map103lab1 {
+public static void main( String args[] ) {
+// Create a Scanner to obtain information from the command prompt
+Scanner input = new Scanner( System.in );
+// Create variables to hold information
 
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-        // TODO code application logic here
-    }
-    
+System.out.println("Enter temperature in Fahrenheit");
+   int temperature = input.nextInt();
+ 
+    temperature = ((temperature - 32)*5)/9;
+ 
+    System.out.println("temperature in Celsius = " + temperature);
+  }
 }
